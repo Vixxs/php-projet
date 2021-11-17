@@ -1,2 +1,3 @@
 <?php
- echo '<header> <h1>Titre</h1></header>';
+ echo '<header> <h1>WE<strong>GROUP</strong></h1></header>';
+
