@@ -36,18 +36,6 @@ final class Excel
         return $tab;
     }
 
-        
-    /**
-     * Melange les elements d'un tableau passé en parametre 
-     *
-     * @param  array $tab
-     * @return array
-     */
-    public function shuffleTab(array $tab)
-    {
-        return shuffle($tab);  
-    }
-
     /**
      * Divise le tableau passé en paramètre selon la taille donner 
      *

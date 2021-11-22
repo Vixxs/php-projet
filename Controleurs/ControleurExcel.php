@@ -41,10 +41,11 @@ final class ControleurExcel
         session_start();
         $excel =  new Excel();
         if (isset($_POST['chunck']) && !empty($_POST['chunck'])){
-           
             $list = $_SESSION['list'];
+            $shuffle = $_SESSION['list'];
             $lenght = $_POST['chunck'];
-            $chunckList = $excel->chunckTab($list,$lenght);
+            shuffle($shuffle);
+            $chunckList = $excel->chunckTab($shuffle,$lenght);
             Vue::montrer('excel/liste', array('excel'=> $list, 'group'=> $chunckList));
         }
     }
