@@ -18,7 +18,7 @@ final class Controleur
         $A_urlDecortique = explode('/', $S_url);
         if (empty($A_urlDecortique[0])) {
             // Nous avons pris le parti de préfixer tous les controleurs par "Controleur"
-            $A_urlDecortique[0] = 'ControleurDefault';
+            $A_urlDecortique[0] = 'ControleurExcel';
         } else {
             $A_urlDecortique[0] = 'Controleur' . ucfirst($A_urlDecortique[0]);
         }
