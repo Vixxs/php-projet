@@ -1,9 +1,8 @@
-# My sweet MVC
-Découverte d'un MVC pas à pas avec PHP
+![alt text](https://i.ibb.co/YdY8jSK/Capture-d-cran-2021-11-22-165801.png)
 
- 1 - HelloWorld à la sauce MVC
- 
- 2 - Routage simple et Exceptions
- 
- 3 - Modèles et connexion BDD (coming soon...)
- 
+Découverte d'un MVC pas à pas avec PHP
+Projet PHP 
+
+Lien de l'hebergement [ici](http://vixx.alwaysdata.net/)
+
+
