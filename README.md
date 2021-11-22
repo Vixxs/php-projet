@@ -1,9 +1,6 @@
-# My sweet MVC
+# Wegroup
 Découverte d'un MVC pas à pas avec PHP
+Projet PHP 
 
- 1 - HelloWorld à la sauce MVC
- 
- 2 - Routage simple et Exceptions
- 
- 3 - Modèles et connexion BDD (coming soon...)
+Lien de l'hebergement ici
  
