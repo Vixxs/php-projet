@@ -2,20 +2,23 @@
 
 final class Excel
 {
-    const PATH_EXCEL = "./Vues/excel/files/liste.csv";
 
-    public function getStudent()
-    {
-        return $this->_S_message ;
-    }
-
-    public function parseExcel($path)
+        
+    /**
+     * Analyse le fichier et renvoie la liste des éleves
+     *
+     * @param  string $path
+     * @return array
+     */
+    public function parseExcel(string $path)
     {  
+
         $handle = fopen($path , "r");
         $list = [];
         while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {
             $list[] = $data;
         }
+
         $students = [];
         foreach($list as $row){
             $students[]=  explode(';',$row[0]);
@@ -33,11 +36,25 @@ final class Excel
         return $tab;
     }
 
-    public function shuffleTab($tab)
+        
+    /**
+     * Melange les elements d'un tableau passé en parametre 
+     *
+     * @param  array $tab
+     * @return array
+     */
+    public function shuffleTab(array $tab)
     {
         return shuffle($tab);  
     }
 
+    /**
+     * Divise le tableau passé en paramètre selon la taille donner 
+     *
+     * @param  array $tab
+     * @param  int $length
+     * @return array
+     */
     public function chunckTab($tab,$length)
     {
         return array_chunk($tab,$length);

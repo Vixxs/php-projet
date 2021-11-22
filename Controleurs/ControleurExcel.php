@@ -2,25 +2,41 @@
 
 final class ControleurExcel
 {
+        
+    /**
+     * Action par defaut à executer à la racine 
+     *
+     * @return void
+     */
     public function defautAction()
     {
         $excel =  new Excel();
         Vue::montrer('excel/form');
     }
-
+    
+    /**
+     * Action pour envoyer le fichier à traiter
+     *
+     * @return void
+     */
     public function postAction()
     {
         $excel =  new Excel();
-        $file = [];
+        $tab = [];
         if (isset($_FILES['excel']) && !empty($_FILES['excel']) && pathinfo($_FILES['excel']['name'],PATHINFO_EXTENSION) == 'csv'){
-            $file = $excel->parseExcel($_FILES['excel']['tmp_name']);
-            Vue::montrer('excel/liste', array('excel'=> $file, 'test'=> $excel->chunckTab($file,4)));
+            $tab = $excel->parseExcel($_FILES['excel']['tmp_name']);
+            Vue::montrer('excel/liste', array('excel'=> $tab, 'test'=> $excel->chunckTab($tab,4)));
         }
         else{
             Vue::montrer('excel/form');
         }
     }
-
+    
+    /**
+     * Action pour générer la liste des groupes
+     *
+     * @return void
+     */
     public function generateAction(){
         session_start();
         $excel =  new Excel();

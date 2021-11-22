@@ -1,5 +1,5 @@
 <section class="form-section">
-    <form action="post" method="post" enctype="multipart/form-data">
+    <form action="excel/post" method="post" enctype="multipart/form-data">
         <section id="separator">
           <h2>Ajouter votre liste d'éleve</h1>    
         </section>    
