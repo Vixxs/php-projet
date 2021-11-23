@@ -5,9 +5,9 @@
         <title>Wegroup</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="shortcut icon" href="Vues/standard/assets/favicon.png" type="image/x-icon">
+        <link rel="shortcut icon" href="/Vues/standard/assets/favicon.png" type="image/x-icon">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="Vues/standard/css/style.css" >
+        <link rel="stylesheet" href="/Vues/standard/css/style.css" >
         <link href="https://fonts.googleapis.com/css2?family=Shippori+Antique+B1&display=swap" rel="stylesheet">
     </head>
     <body>
