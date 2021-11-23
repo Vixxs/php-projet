@@ -4,6 +4,6 @@ Découverte d'un MVC pas à pas avec PHP
 
 Projet PHP 
 
-Lien de l'hebergement [ici](http://vixx.alwaysdata.net/)
+Lien de l'hebergement [ici](https://wegroup.alwaysdata.net/)
 
-
+Lien du fichier à utiliser [ici](https://we.tl/t-8PzmplZINm)
